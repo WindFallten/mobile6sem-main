@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="main"
+        options={{
+          title: 'Главная',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'link' : 'link'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
